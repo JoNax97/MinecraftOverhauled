@@ -1,0 +1,19 @@
+ [
+{
+"modid": "minecraftoverhauled",
+"name": "The Minecraft Overhauled! Mod",
+"description": "The Minecraft Overhauled! mod is a modification for the game Minecraft. It attempts to improve the game experience by taking the best aspects of the game and reinforcing them, and at the same time; overhauling those aspects of the game that are not as good as possible.
+
+This modification covers a wide variety of concepts and game mechanics, form early, primitive survival to advanced industrialized development; from natural environments to magic and supernatural creatures; from  basic-needs supplies to pure decorative building.",
+
+"version": "pre-alpha",
+"mcversion": "1.7.10",
+"url": "hhtp://www.minecraftoverhauled.com",
+"updateUrl": "http://www.minecraftoverhauled.com/downloads/latest",
+"authors": ["The Monkey Butt Modding Team"],
+"credits": "JoNax97, MrClayGolem, Beamfield",
+"logoFile": "minecraftoverhauled.png",
+"screenshots": [],
+"dependencies": [mod_MinecraftForge]
+}
+]

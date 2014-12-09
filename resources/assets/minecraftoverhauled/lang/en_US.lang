@@ -1,0 +1,87 @@
+﻿tile.cheeseMold.name=Cheese Mold
+
+tile.clayOvenOn.name=Active Clay Oven (You shouldn't have this)
+tile.clayOvenOff.name=Clay Oven
+
+tile.campfireOn.name=Active Campfire (You shouldn't have this)
+tile.campfireOff.name=Campfire 
+
+tile.leatherWorkbench.name=Leather Workbench
+tile.leatherWingTop.name=Top Leather Wing (You shouldn't have this)
+tile.leatherWingBottom.name=Bottom Leather Wing (You shouldn't have this)
+tile.leatherWingRight.name=Right Leather Wing (You shouldn't have this)
+tile.leatherWingLeft.name=Left Leather Wing (You shouldn't have this)
+
+tile.wetSand.name=Wet Sand
+tile.wetSandWithFish.name=Buried Fish
+tile.wetSandWithClownfish.name=Buried Clownfish
+tile.wetSandWithBranch.name=Buried Branch
+tile.wetSandWithSeashell.name=Buried Seashell
+tile.wetSandWithBone.name=Buried Bone
+tile.wetSandWithAlgae.name=Buried Algae
+
+tile.coarseDirt.name=Coarse Dirt
+
+tile.tileRoofingPale.name=Pale Roof-tiles
+tile.tileRoofingRed.name=Red Roof-tiles
+tile.slabRoofing.1.name=Pale Roof-tile Slab
+tile.slabRoofing.2.name=Red Roof-tile Slab
+tile.stairsRoofingPale.name=Pale Roof-tile Stairs
+tile.stairsRoofingRed.name=Red Roof-tile Stairs
+
+
+container.clayOven=Clay Oven
+container.leatherWorkbench=Leather Workbench
+
+
+item.impaledFish.name=Impaled Fish
+item.impaledBeef.name=Impaled Beef
+item.impaledTuna.name=Impaled Tuna
+item.impaledSquid.name=Impaled Squid
+item.impaledRottenFlesh.name=Impaled Rotten Flesh
+item.impaledPotato.name=Impaled Potato
+item.impaledPorkchop.name=Impaled Porkchop
+item.impaledMutton.name=Impaled Mutton
+item.impaledMantaray.name=Impaled Manta Ray
+item.impaledCorn.name=Impaled Corn
+item.impaledChicken.name=Impaled Chicken
+item.impaledCarrot.name=Impaled Carrot
+item.impaledCacti.name=Impaled Cactus Meat
+item.impaledBacon.name=Impaled Bacon
+
+item.tuna.name=Raw Tuna
+item.squid.name=Raw Squid
+item.mutton.name=Raw Mutton
+item.mantaray.name=Raw Manta Ray
+item.cactusMeat.name= Cactus Meat
+item.corn.name=Corn
+item.bacon.name=Raw Bacon
+item.algae.name=Algae
+
+item.cookedTuna.name=Cooked Tuna
+item.cookedSquid.name=Calamari
+item.cookedFlesh.name=Cooked Flesh
+item.cookedMutton.name=Cooked Mutton
+item.cookedMantaray.name=Cooked Manta Ray
+item.cookedCorn.name=Baked Corn
+item.cookedCarrot.name=Baked Carrot
+item.cookedCactusMeat.name=Baked Cactus Meat
+item.cookedBacon.name=Cooked Bacon
+
+item.clayPanel.name=Cooked Clay Panel
+item.woodenPlankOak.name=Oak Wood Plank
+item.woodenPlankBirch.name=Birch Wood Plank
+item.woodenPlankJungle.name=Jungle Wood Plank
+item.woodenPlankSpruce.name=Spruce Wood Plank
+item.woodenPlankBigOak.name=Big Oak Wood Plank
+item.woodenPlankAcacia.name=Acacia Wood Plank
+
+item.ironSaw.name=Iron Saw
+item.diamondSaw.name=Diamond Saw
+item.flintKinife.name=Flint Knife
+
+item.mortar.name=Mortar
+
+item.ashes.name=Ashes
+item.branch.name=Branch
+item.seashell.name=Seashell
