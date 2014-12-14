@@ -4,13 +4,18 @@ import org.lwjgl.opengl.GL11;
 
 import com.mbm.mcoh.Main;
 import com.mbm.mcoh.container.ContainerLeatherWorkbench;
+import com.mbm.mcoh.network.CraftMatrixUpdate;
+import com.mbm.mcoh.network.NetworkHandler;
 import com.mbm.mcoh.tileentity.TileEntityLeatherWorkbench;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityClientPlayerMP;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.InventoryEffectRenderer;
 import net.minecraft.client.resources.I18n;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.util.ResourceLocation;
@@ -44,18 +49,18 @@ public class GuiLeatherWorkbench extends InventoryEffectRenderer{
 	
 	protected void actionPerformed(GuiButton button) {
 	 super.actionPerformed(button);
-	 this.getContainer();
+	 	 
 		if(button.id == 0)
-		 {tileEntity.selectedSlot = 0; this.getContainer().onCraftMatrixChanged(this.getContainer().craftMatrix);}
+		 {tileEntity.selectedSlot = 0; NetworkHandler.network.sendToServer(new CraftMatrixUpdate(true));}
 		
 		if(button.id == 1)
-		 {tileEntity.selectedSlot = 1;this.getContainer().onCraftMatrixChanged(this.getContainer().craftMatrix);}
+		 {tileEntity.selectedSlot = 1; NetworkHandler.network.sendToServer(new CraftMatrixUpdate(true));}
 		
 		if(button.id == 2)
-		 {tileEntity.selectedSlot = 2;this.getContainer().onCraftMatrixChanged(this.getContainer().craftMatrix);}
+		 {tileEntity.selectedSlot = 2; NetworkHandler.network.sendToServer(new CraftMatrixUpdate(true));}
 		
 		if(button.id == 3)
-		 {tileEntity.selectedSlot = 3;this.getContainer().onCraftMatrixChanged(this.getContainer().craftMatrix);}
+		 {tileEntity.selectedSlot = 3; NetworkHandler.network.sendToServer(new CraftMatrixUpdate(true));}
 		
 		if(button.id == 4)
 		 {crafterIsPressed = true;

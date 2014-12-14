@@ -1,5 +1,6 @@
 package com.mbm.mcoh.item;
 
+import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
@@ -7,6 +8,7 @@ import net.minecraft.item.ItemFood;
 import net.minecraft.potion.Potion;
 
 import com.mbm.mcoh.Main;
+import com.mbm.mcoh.block.BlockRegistry;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -35,6 +37,7 @@ public final class ItemRegistry {
 	public static Item cactusMeat;
 	public static Item bacon;
 	public static Item algae;
+	public static Item olives;
 	
 	public static Item cookedTuna;
 	public static Item cookedSquid;
@@ -57,10 +60,23 @@ public final class ItemRegistry {
 	public static Item ashes;
 	public static Item branch;
 	public static Item seashell;
+	public static Item rock;
+	
+	public static Item bambooItem;
 		
 	public static Item bronzeSaw;
 	public static Item diamondSaw;
 	public static Item ironSaw;
+	
+	public static Item silverChunk;
+	public static Item nickelChunk;
+	public static Item manganeseChunk;
+	public static Item leadChunk;
+	public static Item aluminumChunk;
+	public static Item tinChunk;
+	public static Item ironChunk;
+	public static Item goldChunk;
+	public static Item copperChunk;
 	
 	public static Item bronzeHammer;
 	public static Item ironHammer;
@@ -73,9 +89,6 @@ public final class ItemRegistry {
 	public static Item mortar;
 	
 	public static Item nail;
-
-	
-
 	
 
     public static final void init() {
@@ -152,7 +165,81 @@ public final class ItemRegistry {
 		.setTextureName(Main.MODID + ":mortar");
 
 		GameRegistry.registerItem(mortar, "mortar");
-    	
+		
+		silverChunk = new Item()
+        
+		.setUnlocalizedName("silverChunk")
+		.setCreativeTab(CreativeTabs.tabMaterials)
+		.setTextureName(Main.MODID + ":silver_chunk");
+
+		GameRegistry.registerItem(silverChunk, "silverChunk");
+		
+		nickelChunk = new Item()
+        
+		.setUnlocalizedName("nickelChunk")
+		.setCreativeTab(CreativeTabs.tabMaterials)
+		.setTextureName(Main.MODID + ":nickel_chunk");
+
+		GameRegistry.registerItem(nickelChunk, "nickelChunk");
+		
+		manganeseChunk = new Item()
+        
+		.setUnlocalizedName("manganeseChunk")
+		.setCreativeTab(CreativeTabs.tabMaterials)
+		.setTextureName(Main.MODID + ":manganese_chunk");
+
+		GameRegistry.registerItem(manganeseChunk, "manganeseChunk");
+		
+		leadChunk = new Item()
+        
+		.setUnlocalizedName("leadChunk")
+		.setCreativeTab(CreativeTabs.tabMaterials)
+		.setTextureName(Main.MODID + ":lead_chunk");
+
+		GameRegistry.registerItem(leadChunk, "leadChunk");
+		
+		aluminumChunk = new Item()
+        
+		.setUnlocalizedName("aluminumChunk")
+		.setCreativeTab(CreativeTabs.tabMaterials)
+		.setTextureName(Main.MODID + ":aluminum_chunk");
+
+		GameRegistry.registerItem(aluminumChunk, "aluminumChunk");
+		
+		tinChunk = new Item()
+        
+		.setUnlocalizedName("tinChunk")
+		.setCreativeTab(CreativeTabs.tabMaterials)
+		.setTextureName(Main.MODID + ":tin_chunk");
+
+		GameRegistry.registerItem(tinChunk, "tinChunk");
+		
+		ironChunk = new Item()
+        
+		.setUnlocalizedName("ironChunk")
+		.setCreativeTab(CreativeTabs.tabMaterials)
+		.setTextureName(Main.MODID + ":iron_chunk");
+
+		GameRegistry.registerItem(ironChunk, "ironChunk");
+		
+		
+		goldChunk = new Item()
+        
+		.setUnlocalizedName("goldChunk")
+		.setCreativeTab(CreativeTabs.tabMaterials)
+		.setTextureName(Main.MODID + ":gold_chunk");
+
+		GameRegistry.registerItem(goldChunk, "goldChunk");
+		
+		copperChunk = new Item()
+        
+		.setUnlocalizedName("copperChunk")
+		.setCreativeTab(CreativeTabs.tabMaterials)
+		.setTextureName(Main.MODID + ":copper_chunk");
+
+		GameRegistry.registerItem(copperChunk, "copperChunk");
+		
+		    	
         clayPanel = new Item()
         
         				.setUnlocalizedName("clayPanel")
@@ -233,6 +320,14 @@ public final class ItemRegistry {
         
         				GameRegistry.registerItem(seashell, "seashell");
         				
+       rock = new Item()
+         		        
+         				.setUnlocalizedName("rock")
+         				.setCreativeTab(CreativeTabs.tabMaterials)
+         				.setTextureName(Main.MODID + ":rock");
+         
+         				GameRegistry.registerItem(rock, "rock");
+        				
        branch = new Item()
         		        
         				.setUnlocalizedName("branch")
@@ -240,6 +335,13 @@ public final class ItemRegistry {
         				.setTextureName(Main.MODID + ":branch");
         
         				GameRegistry.registerItem(branch, "branch");
+        				
+       bambooItem = new ItemBamboo()
+        		        
+        				.setUnlocalizedName("bambooItem")
+        				.setTextureName(Main.MODID + ":bamboo");
+        
+        				GameRegistry.registerItem(bambooItem, "bambooItem");
         					
        impaledFish = new ItemImpaledFood()
         
@@ -371,6 +473,13 @@ algae = new ItemFood(1, 0.3F, false)
       
               		GameRegistry.registerItem(algae, "algae");  
               		
+olives = new ItemFood(1, 0.3F, false)
+
+	 				.setUnlocalizedName("olives")
+      				.setTextureName(Main.MODID + ":olives");
+      
+              		GameRegistry.registerItem(olives, "olives");
+              		
               		
 squid = new ItemFood(1, 0.4F, false)
                     
@@ -434,14 +543,14 @@ cookedSquid = new ItemFood(5, 3F, false)
       
               		GameRegistry.registerItem(cookedSquid, "cookedSquid");
               		
-cookedFlesh = new ItemFood(6, 1.8F, false)
+cookedFlesh = new ItemFood(6, 1.8F, true)
                     
       				.setUnlocalizedName("cookedFlesh")
               		.setTextureName(Main.MODID + ":cooked_flesh");
       
               		GameRegistry.registerItem(cookedFlesh, "cookedFlesh");
               		
-cookedMutton = new ItemFood(6, 9.6F, false)
+cookedMutton = new ItemFood(6, 9.6F, true)
                     
       				.setUnlocalizedName("cookedMutton")
               		.setTextureName(Main.MODID + ":mutton_cooked");
@@ -476,7 +585,7 @@ cookedCactusMeat = new ItemFood(4, 6F, false)
       
               		GameRegistry.registerItem(cookedCactusMeat, "cookedCactusMeat");
               		
-cookedBacon = new ItemFood(8, 12.8F, false)
+cookedBacon = new ItemFood(8, 12.8F, true)
                     
       				.setUnlocalizedName("cookedBacon")
               		.setTextureName(Main.MODID + ":bacon_cooked");
